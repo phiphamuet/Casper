@@ -102,16 +102,21 @@
 </aside>
 <aside class="facebook-comment">
     
+    <div id="fb-root"></div>
     <script>(function(d, s, id) {
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) return;
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.5&appId=1601968960025509";
-     fjs.parentNode.insertBefore(js, fjs);
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.7&appId=1601968960025509";
+      fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
     <article class="post">
         <div id="fb-root"></div>
         <div class="fb-comments" data-href="{{@blog.url}}/{{slug}}" data-numposts="10" data-width="100%" data-order-by="social"></div>
     </article>
+    <article class="post">
+        <div class="fb-comment-embed" data-href="https://bigzero.herokuapp.com/lua-chon-framework-khi-viet-mot-ung-dung-bang-nodejs" data-width="560" data-include-parent="false"></div>
+    </article>
+    <iframe src="https://www.facebook.com/plugins/comment_embed.php?href=https%3A%2F%2Fbigzero.herokuapp.com%2Flua-chon-framework-khi-viet-mot-ung-dung-bang-nodejs&width=560&include_parent=false&appId=1601968960025509&height=0" width="560" height="0" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 </aside>
 {{/post}}
